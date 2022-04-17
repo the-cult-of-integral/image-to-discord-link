@@ -1,5 +1,5 @@
 # image-to-discord-link
-A simple python CLI to convert images to cdn.discordapp.com links.
+A simple python CLI to convert images to cdn.discordapp.com links; 100 images per conversion.
 
 ![image_2022-04-17_215550113](https://user-images.githubusercontent.com/98130822/163731723-783d047c-d948-4519-baad-888562fb9020.png)
 
