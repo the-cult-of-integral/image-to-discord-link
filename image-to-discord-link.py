@@ -77,7 +77,15 @@ async def on_ready() -> None:
         # Send images to channel and retrieve their URLs
         # alive_bar(processes) is the progress bar
 
-        print(f"Converting images to cdn.discordapp.com links...\n\n{Fore.LIGHTYELLOW_EX}")
+        print(f"""{Fore.LIGHTGREEN_EX}Converting images to \
+cdn.discordapp.com links...
+
+{Fore.LIGHTBLUE_EX}Total Processes: {len(images) * 3}
+{Fore.LIGHTWHITE_EX}{len(images)} images to upload.
+{len(images)} URLs to retrieve.
+{len(images)} URLs to save.\n\n
+
+{Fore.LIGHTYELLOW_EX}""")
         processes = len(images) * 3
         with alive_bar(processes) as bar:
             for image in images:
