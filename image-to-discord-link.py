@@ -96,7 +96,7 @@ cdn.discordapp.com links...
                 bar()  # increments progress bar value by 1
             
             urls = []
-            async for message in channel.history():
+            async for message in channel.history(limit=None):
                 for attachment in message.attachments:
                     urls.append(attachment.url)
                     bar()
